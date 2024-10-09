@@ -31,8 +31,7 @@ else:
 """
 
 
-num_1: float=float(input("Enter the number: "))
-num_2: float=float(input("Enter another number: "))
+
 print("1: Addition")
 print("2: Substraction")
 print("3: Division")
@@ -40,35 +39,54 @@ print("4: Multipication")
 print("5: Modulas")
 print("6: Floor Division")
 print("7: Exponential")
+print("8: EXIT\n")
 
-ch=int(input("Enter your choice(1-7): "))
-if ch==1:
-    Sum=num_1 + num_2
-    print(Sum)
 
-elif ch==2:
-    Sub=num_1 - num_2
-    print(Sub) 
+while True: 
+        ch=int(input("Enter your choice(1-8): "))
+        num_1: float=float(input("Enter the number: "))
+        num_2: float=float(input("Enter another number: \n"))  
+        
 
-elif ch==3:
-    Div=num_1/num_2
-    print(Div) 
+        if ch==1:
+            Sum=num_1 + num_2
+            print(f"\n{num_1} + {num_2} = {Sum}\n")
+        
+            
+        elif ch==2:
+            Sub=num_1 - num_2
+            print(f"\n{num_1} - {num_2} = {Sub}\n") 
+        
 
-elif ch==4:
-    Mul=num_1 * num_2
-    print(Mul) 
+        elif ch==3:
+            Div=num_1/num_2
+            print(f"\n{num_1} / {num_2} = {Div}\n")
+        
 
-elif ch==5:
-    Mod=num_1 % num_2
-    print(Mod)     
+        elif ch==4:
+            Mul=num_1 * num_2
+            print(f"\n{num_1} * {num_2} = {Mul}\n") 
+        
+        elif ch==5:
+            Mod=num_1 % num_2
+            print(f"\n{num_1} % {num_2} = {Mod}\n")  
+        
 
-elif ch==6:
-    Flo=num_1 // num_2
-    print(Flo)
+        elif ch==6:
+            Flo=num_1 // num_2
+            print(f"\n{num_1} // {num_2} = {Flo}\n")
+        
 
-elif ch==7:
-    Expo=num_1 ** num_2
-    print(Expo)
+        elif ch==7:
+            Expo=num_1 ** num_2
+            print(f"\n{num_1} ** {num_2} = {Expo}\n")
+        
+        elif ch==8:
+            print("\n......EXITING......".center(60))
+            break
+        
+        else:
+            print("\nINVALID CHOICE")  
+            break                  
 
-else:
-    print("INVALID CHOICE")                    
+        
