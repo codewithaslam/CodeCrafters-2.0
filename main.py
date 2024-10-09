@@ -31,21 +31,21 @@ else:
 """
 
 
-
-print("1: Addition")
-print("2: Substraction")
-print("3: Division")
-print("4: Multipication")
-print("5: Modulas")
-print("6: Floor Division")
-print("7: Exponential")
-print("8: EXIT\n")
+print("\n\t\t\t CALCULATOR SIMULATOR")
+print("\t\t\t ********************\n")
+print("\t\t\t  1: Addition")
+print("\t\t\t  2: Substraction")
+print("\t\t\t  3: Division")
+print("\t\t\t  4: Multipication")
+print("\t\t\t  5: Modulas")
+print("\t\t\t  6: Floor Division")
+print("\t\t\t  7: Exponential\n")
 
 
 while True: 
-        ch=int(input("Enter your choice(1-8): "))
+        ch=int(input("Enter your choice(1-7): "))
         num_1: float=float(input("Enter the number: "))
-        num_2: float=float(input("Enter another number: \n"))  
+        num_2: float=float(input("Enter another number: "))  
         
 
         if ch==1:
@@ -81,12 +81,8 @@ while True:
             Expo=num_1 ** num_2
             print(f"\n{num_1} ** {num_2} = {Expo}\n")
         
-        elif ch==8:
-            print("\n......EXITING......".center(60))
-            break
-        
         else:
-            print("\nINVALID CHOICE")  
+            print("\n\t\t\t!!!!!ERROR!!!!!")  
             break                  
 
         
