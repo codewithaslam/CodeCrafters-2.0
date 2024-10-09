@@ -51,4 +51,24 @@ elif ch==2:
     print(Sub) 
 
 elif ch==3:
-    Sub       
+    Div=num_1/num_2
+    print(Div) 
+
+elif ch==4:
+    Mul=num_1 * num_2
+    print(Mul) 
+
+elif ch==5:
+    Mod=num_1 % num_2
+    print(Mod)     
+
+elif ch==6:
+    Flo=num_1 // num_2
+    print(Flo)
+
+elif ch==7:
+    Expo=num_1 ** num_2
+    print(Expo)
+
+else:
+    print("INVALID CHOICE")                    
