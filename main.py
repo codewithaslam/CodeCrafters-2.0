@@ -30,7 +30,7 @@ else:
 
 """
 
-
+"""
 print("\n\t\t\t CALCULATOR SIMULATOR")
 print("\t\t\t ********************\n")
 print("\t\t\t  1: Addition")
@@ -82,7 +82,45 @@ while True:
             print(f"\n{num_1} ** {num_2} = {Expo}\n")
         
         else:
-            print("\n\t\t\t!!!!!ERROR!!!!!")  
-            break                  
+            print("\n\t\t\t!!!!!ERROR!!!!!") 
+            break                   
+"""
 
-        
+
+#i=0
+#for i in range(9):
+#    print("Hello World")
+
+"""
+i=1
+while i<10:
+    print(i,"Hlooo")
+    i+=2
+
+    while i<10:
+        print(i,"Hloo")
+        i+=2
+
+print(i,"Hloo")        
+"""
+
+#i=0
+#for i in range(0,10,2):
+#   print(i,"Hello World")
+
+
+"""
+def sum_num(a,b):
+    Sum=a+b
+    return Sum 
+
+a=int(input("Enter the number:"))
+b=int(input("Enter another number: "))
+Ans=sum_num(a,b)
+print(Ans)
+"""
+
+
+import random
+x=random.random()
+print(x)
